@@ -9,13 +9,13 @@ export default function App() {
     return (
       <View style={styles.imageContainer}>
         <Image
-          source={require('./src/img/logo.png')} 
-          style={styles.logo}            
+          source={require('./src/img/logo.png')}
+          style={styles.logo}
           resizeMode="contain"
         />
         <Image
-          source={require('./src/img/wave.png')} 
-          style={styles.imageTop}            
+          source={require('./src/img/wave.png')}
+          style={styles.imageTop}
           resizeMode="cover"
         />
       </View>
@@ -24,7 +24,7 @@ export default function App() {
 
   const handleLogin = () => {
     // Aquí puedes manejar el evento cuando se presiona el botón
-    console.log('Login button pressed');
+    console.log('Login button pressed, check');
   };
 
   return (
@@ -55,27 +55,27 @@ const styles = StyleSheet.create({
   mainContainer: {
     flex: 1,
     backgroundColor: '#f1f1f1',
-    justifyContent: 'center', 
+    justifyContent: 'center',
   },
   container: {
     alignItems: 'center',
-    justifyContent: 'center', 
-    flex: 1,      
-    marginBottom: '40%'      
+    justifyContent: 'center',
+    flex: 1,
+    marginBottom: '40%'
   },
   imageContainer: {
-    alignItems: 'center',     
+    alignItems: 'center',
   },
   imageTop: {
     width: '100%',
-    height: Dimensions.get('window').height*0.4
+    height: Dimensions.get('window').height * 0.4
   },
   logo: {
-    width:250,    
+    width: 250,
     height: 250,
-    position: 'absolute', 
-    top: 0,             
-    zIndex: 1,      
+    position: 'absolute',
+    top: 0,
+    zIndex: 1,
   },
   titulo: {
     fontSize: 30,
