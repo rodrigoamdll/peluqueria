@@ -2,8 +2,21 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, TextInput, Dimensions, Image } from 'react-native';
 import Button from './src/components/Button';
+const {EXPO_PUBLIC_API_URL, EXPO_PUBLIC_API_KEY} = process.env;
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDrangIq3SJzHxyKUVY6Js8ABOSjF4JZYA",
+  authDomain: "peluqueria-132f3.firebaseapp.com",
+  projectId: "peluqueria-132f3",
+  storageBucket: "peluqueria-132f3.appspot.com",
+  messagingSenderId: "48546151210",
+  appId: "1:48546151210:web:daef1361bada455321bc53",
+  measurementId: "G-9Y8784DWBT"
+};
 
 export default function App() {
+
+  console.log(process.env);
 
   function ImageTop() {
     return (
